@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+    <RelativeLayout
+        android:id="@+id/menuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_alignParentStart="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:onClick="onSettingClick"
+            android:src="@drawable/back_icon"
+            tools:ignore="OnClick"/>
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:text="Player 1's turn"
+        android:padding="16dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn"
+                android:textSize="40sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn"
+                android:textSize="40sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="131dp">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:onClick="clcBtn"
+                android:textSize="40sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/player1Points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold"
+            android:text="Player 1: "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/player2Points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:text="Player 2: "/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newGame"
+        android:onClick="clickRestart"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:onClick="resetScores"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"/>
+</LinearLayout>

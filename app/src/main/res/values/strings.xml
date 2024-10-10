@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+
+    <string name="winner_message">Congratulations, you won!</string>
+    <string name="pc_winner_message">Try again, Bot is the winner!</string>
+    <string name="newGame">New Game</string>
+    <string name="reset">Reset</string>
+    <string name="FirstWin">Congratulations the player_1 wins!</string>
+    <string name="SecondWin">Congratulations the player_2 wins!</string>
+
+    <string name="draw_message">It\'s a draw!</string>
+
+</resources>
